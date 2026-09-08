@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body { @apply bg-shell text-espresso font-sans; }
+  ::selection { background: #C4856A; color: #FAF8F5; }
+  :focus-visible { outline: 2px solid #C4856A; outline-offset: 4px; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-[1200px] px-6 sm:px-10; }
+  .display { @apply font-display font-normal leading-[1.05] tracking-[-0.015em]; }
+  .btn { @apply inline-flex items-center justify-center rounded-full px-8 py-4 text-[15px] font-medium tracking-wide transition-colors; }
+  .btn-clay { @apply btn bg-clay text-shell hover:bg-clay-deep; }
+  .btn-outline { @apply btn border border-espresso/25 text-espresso hover:border-espresso hover:bg-espresso hover:text-shell; }
+  .eyebrow { @apply text-xs font-medium uppercase tracking-[0.18em] text-clay-deep; }
+  .lede { @apply text-lg leading-relaxed text-espresso-soft sm:text-xl; }
+  .body-text { @apply text-base leading-relaxed text-espresso-soft sm:text-lg; }
+}
