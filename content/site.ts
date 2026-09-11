@@ -38,7 +38,7 @@ export const site = {
   ],
   closedNote: "Closed Sunday and Monday",
   // Paste a Web3Forms key to receive real booking requests by email.
-  formAccessKey: "",
+  formAccessKey: "3778005f-9eff-4e8b-958f-69984f040ba2",
 } as const;
 
 export const nav = [
